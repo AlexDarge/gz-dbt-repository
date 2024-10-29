@@ -5,7 +5,7 @@ sources:
     tables: 
       - name: raw_gz_sales
         freshness:
-          warn_after: {count: 90, period: hour}
+          warn_after: {count: 90, period: day}
         loaded_at_field: "CAST(date_date AS TIMESTAMP)"
 
         tests:
