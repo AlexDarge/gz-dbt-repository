@@ -42,3 +42,31 @@ sources:
           - name: shipping_fee_1
           - name: logCost
           - name: ship_cost
+    
+    
+models: 
+  - name: int_orders_margin
+    description: marge commandes
+    columns:
+      - name: orders_id
+        tests: 
+          - unique
+          - not_null
+
+  - name: int_orders_operational
+    description: marge opérationelle
+    columns:
+      - name: orders_id
+        tests: 
+          - unique
+          - not_null
+
+  - name: finance_days
+    description: marge opérationelle
+    columns:
+      - name: date_date
+        tests: 
+          - unique
+          - not_null
+          
+          
