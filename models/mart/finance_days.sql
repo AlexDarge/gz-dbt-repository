@@ -1,8 +1,4 @@
-{{ config(
-    materialized='table' 
-) }}
 
-WITH finance_days AS (
     SELECT 
         date_date, 
         COUNT(DISTINCT quantity) AS nb_transaction, 
@@ -16,8 +12,5 @@ WITH finance_days AS (
         SUM(quantity) AS total_quantity_sold
     FROM{{ref("int_orders_operational")}}
     GROUP BY date_date
-)
 
-SELECT *
-FROM finance_days
 
