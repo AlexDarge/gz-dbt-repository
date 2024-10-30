@@ -114,4 +114,13 @@ models:
           - unique
           - not_null
           
+  - name: int_campaigns
+    description: campaign
+    columns:
+      - name: "(campaign_key||'-'||date_date)"
+        description: Primary key.
+        tests:
+          - unique
+          - not_null
+          
           
