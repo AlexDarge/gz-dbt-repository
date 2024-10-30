@@ -131,5 +131,13 @@ models:
         tests: 
           - unique
           - not_null
+
+  - name: finance_campaign_day
+    description: finace
+    columns:
+      - name: date_date
+        tests: 
+          - unique
+          - not_null
           
           
