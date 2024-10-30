@@ -64,8 +64,7 @@ sources:
           - name: impression
           - name: click
       
-      - name: criteo
-        identifier: raw_gz_criteo
+      - name: raw_gz_criteoo
         columns:
           - name: date_date
           - name: paid_source
