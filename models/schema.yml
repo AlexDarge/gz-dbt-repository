@@ -54,8 +54,6 @@ sources:
 
 
       - name: raw_gz_adwords
-        #identifier: raw_gz_adwords
-        description: adwords
         columns:
           - name: date_date
           - name: paid_source
