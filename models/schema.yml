@@ -42,6 +42,38 @@ sources:
           - name: shipping_fee_1
           - name: logCost
           - name: ship_cost
+
+
+
+
+
+
+
+
+
+
+
+      - name: raw_gz_adwords
+        #identifier: raw_gz_adwords
+        description: adwords
+        columns:
+          - name: date_date
+          - name: paid_source
+          - name: campaign_key
+          - name: camPGN_name
+          - name: ads_cost
+          - name: impression
+          - name: click
+
+      - name: bing
+        identifier: raw_gz_bing
+      
+      - name: criteo
+        identifier: raw_gz_criteo
+      
+      - name: facebook
+        identifier: raw_gz_facebook
+
     
     
 models: 
