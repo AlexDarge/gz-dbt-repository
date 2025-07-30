@@ -1,5 +1,5 @@
 {% macro margin_percentage (revenue , purchase_cost) %}
-    ROUND((({{revenue}}-{{purchase_cost}})/{{purchase_cost}})*100, 2)
+    ROUND((({{revenue}}-{{purchase_cost}})/{{revenue}})*100, 2)
 {% endmacro %}
 
 
